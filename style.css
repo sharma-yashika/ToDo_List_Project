@@ -1,0 +1,62 @@
+#ulTasks li.done
+{
+    color: gray;
+    text-decoration: line-through;
+}
+#btnAdd, #btnCleanup, #btnSort, #btnReset
+{
+    height: 40px;
+}
+#btnAdd::before
+{
+    content : 'Add \f067 ';
+    font-family: 'FontAwesome';
+    font-size: 1.25em;
+/*     
+    position: absolute;
+    right: 234px;
+    bottom: 6px;
+    margin-right: 2px;
+    margin-bottom: -3px; */
+}
+
+#btnCleanup::before
+{
+    content : 'Cleanup \f1f8';
+    font-family: 'FontAwesome';
+    font-size: 1.25em;
+/*     
+    position: absolute;
+    right: 234px;
+    bottom: 6px;
+    font-size: 1.25em;
+    margin-right: 2px;
+    margin-bottom: -3px; */
+}
+#btnSort::before
+{
+    content : 'Sort \f161 ';
+    font-family: 'FontAwesome';
+    font-size: 1.25em;
+/*     
+    position: absolute;
+    right: 231px;
+    bottom: 6px;
+    font-size: 1.25em;
+    margin-right: 2px;
+    margin-bottom: -3px; */
+}
+#btnReset::before
+{
+    content: 'Reset \f0e2' ;
+    font-family: 'FontAwesome';
+    font-size: 1.25em;
+/*     
+    position: absolute;
+    right: 230px;
+    bottom: 6px;
+    font-size: 1.25em;
+    margin-right: 2px;
+    margin-bottom: -3px; */
+}
+

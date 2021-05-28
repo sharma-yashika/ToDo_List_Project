@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <link rel = "stylesheet" href = "style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <center>ToDo List</center>
+        </h1>
+        <!--Input Box-->
+        <div class="row ">
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label for="inpNewTask" class="form-label">New Task</label>
+                    <input type="text" class="form-control" id="inpNewTask" placeholder="Enter Your New Task here.."/>
+                    <small id="newTask" class="form-text text-muted">A short one line description of your task</small>
+                </div>
+            </div>
+                <!--Buttons-->
+           
+                <div class="col-md-4">
+                    <div class="row">
+                        <button class = "btn btn-success col m-2" id="btnAdd" disabled></button>
+                        <button class = "btn btn-primary col m-2" id="btnReset" disabled></button>
+
+                    </div>
+                    <div class="row">
+                        <button class = "btn btn-warning col m-2" id="btnSort"disabled></button>
+                        <button class = "btn btn-danger col m-2 "id="btnCleanup"disabled></button>
+                    </div>
+                   
+                </div>
+            
+        </div> 
+             
+            <!--Task List-->
+            <ul class="list-group" id="ulTasks"></ul>
+        </div>
+    
+</body>
+</html>
